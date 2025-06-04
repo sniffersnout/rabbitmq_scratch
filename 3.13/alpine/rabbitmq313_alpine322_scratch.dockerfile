@@ -5,7 +5,9 @@
 #
 
 # Alpine Linux is not officially supported by the RabbitMQ team -- use at your own risk!
-FROM alpine:3.22 as build-base
+FROM scratch
+
+ADD alpine-minirootfs-3.22.0-x86_64.tar.gz /
 
 RUN apk add --no-cache \
 	build-base \
