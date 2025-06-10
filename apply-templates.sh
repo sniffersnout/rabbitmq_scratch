@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env /opt/local/bin/bash
 set -Eeuo pipefail
 
 [ -f versions.json ] # run "versions.sh" first
